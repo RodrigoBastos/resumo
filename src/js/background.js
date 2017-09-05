@@ -5,7 +5,7 @@ class ExtensionBackground {
 
   events() {
     chrome.browserAction.onClicked.addListener((tab) => {
-      alert('It is working');
+      alert('Resumo de links!');
     });
   }
 }
