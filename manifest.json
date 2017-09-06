@@ -1,7 +1,7 @@
 {
   "name": "resumo",
-  "description": "Addon Chrome que gera resumo dos links compartilhados no facebook",
-  "version": "0.0.1",
+  "description": "Extensão do Chrome que gera resumo dos links compartilhados no facebook",
+  "version": "0.0.2",
   "icons": {
     "16": "assets/icon_16x16.png",
     "32": "assets/icon_32x32.png",
@@ -13,7 +13,7 @@
     "tabs",
     "storage",
     "cookies",
-    "*://*.example.com/"
+    "declarativeContent"
   ],
   "background": {
     "scripts": [
@@ -23,19 +23,15 @@
     ],
     "persistent": false
   },
-  "browser_action": {
-    "default_title": "Simple example.",
+  "page_action": {
     "default_icon": {
-      "19": "assets/icon_19x19.png",
-      "38": "assets/icon_38x38.png"
-    }
+      "19": "assets/icon_19x19.png"
+    },
+    "default_title": "Resumo"
   },
   "content_scripts": [
     {
-      "matches": [
-        "http://*.example.com/*",
-        "https://*.example.com/*"
-      ],
+      "matches": [ "https://*.facebook.com.br/*" ],
       "css": [
         "css/extension.css"
       ],
