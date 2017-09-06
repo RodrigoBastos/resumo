@@ -2,7 +2,10 @@
 
 class ExtensionClient {
   constructor() {
-    console.log('Client script loaded.');
+		$(document).ready(function() {
+			var links = $('a');
+			console.log(links);
+		});
   }
 }
 
