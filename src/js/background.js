@@ -1,22 +1,5 @@
 'use strict';
 
-// class ExtensionBackground {
-//   constructor() { this.events(); }
-//
-//   events() {
-//     chrome.browserAction.onClicked.addListener((tab) => {
-// 			chrome.extension.getBackgroundPage().console.log('Execute Background');
-// 			chrome.tabs.executeScript({
-// 				code: 'document.body'
-// 			}, (result) => {
-// 				chrome.extension.getBackgroundPage().console.log('result', result);
-//       });
-//     });
-//   }
-// }
-//
-// new ExtensionBackground();
-
 class ExtensionBackground {
 	constructor() {
 		// Quando estiver instalando/atualizando:
