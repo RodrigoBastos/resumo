@@ -4,6 +4,7 @@ class ExtensionBackground {
 	constructor() {
 		// Quando estiver instalando/atualizando:
 		chrome.runtime.onInstalled.addListener(this.events);
+		chrome.extension.getBackgroundPage().console.log('Execute Background');
 	}
 
 	events() {
