@@ -1,6 +1,6 @@
 {
   "name": "resumo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Addon Chrome que gera resumo dos links compartilhados no facebook",
   "main": "index.js",
   "scripts": {

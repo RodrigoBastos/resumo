@@ -7,7 +7,6 @@ class ExtensionClient {
 			_.forEach(links, (link) => {
 				console.log(link.href);
 			});
-
 		});
   }
 }
