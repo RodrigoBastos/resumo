@@ -3,9 +3,9 @@
   "description": "Extensão do Chrome que gera resumo dos links compartilhados no facebook",
   "version": "0.0.2",
   "icons": {
-    "16": "assets/icon_16x16.png",
-    "32": "assets/icon_32x32.png",
-    "48": "assets/icon_48x48.png",
+    "16": "assets/icon_128x128.png",
+    "32": "assets/icon_128x128.png",
+    "48": "assets/icon_128x128.png",
     "128": "assets/icon_128x128.png"
   },
   "permissions": [
@@ -25,7 +25,7 @@
   },
   "page_action": {
     "default_icon": {
-      "19": "assets/icon_19x19.png"
+      "32": "assets/icon_128x128.png"
     },
     "default_title": "Resumo"
   },
@@ -41,9 +41,5 @@
       ]
     }
   ],
-  "manifest_version": 2,
-  "web_accessible_resources": [
-    "assets/icon_38x38.png",
-    "assets/icon_19x19.png"
-  ]
+  "manifest_version": 2
 }
