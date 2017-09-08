@@ -3,13 +3,15 @@
 class ExtensionClient {
   constructor() {
 		$(document).ready(function() {
-			function addHoverEvents() {
-				$('a._52c6').hover((e) => {
-					console.log(e.target.href);
+			function addMouseEvents() {
+				$('a._52c6').mouseover((e) => {
+					e.target.style.backgroundColor = 'black';
+				}).mouseout((e) => {
+					e.target.style.backgroundColor = 'inherit';
 				});
 				setTimeout(addHoverEvents, 10000);
 			}
-			addHoverEvents();
+			addMouseEvents();
 		});
   }
 }
