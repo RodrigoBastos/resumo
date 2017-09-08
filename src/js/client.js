@@ -3,10 +3,13 @@
 class ExtensionClient {
   constructor() {
 		$(document).ready(function() {
-			var links = $('._52c6');
-			_.forEach(links, (link) => {
-				console.log(link.href);
-			});
+			function addHoverEvents() {
+				$('a._52c6').hover((e) => {
+					console.log(e.target.href);
+				});
+				setTimeout(addHoverEvents, 10000);
+			}
+			addHoverEvents();
 		});
   }
 }
